@@ -10,8 +10,10 @@
 <?php 
      $paragraph = 'Oggi è un bel giorno per non lavorare';
      $paragraphLength = strlen($paragraph);
+     $hide = $_GET['hide'];
+     $newParagraph = str_replace($hide, '***', $paragraph);
 
-    echo "$paragraph". "  ". "$paragraphLength";
+    echo "$paragraph". "  ". "$paragraphLength".' '. $newParagraph; 
  ?>  
 </body>
 </html>
